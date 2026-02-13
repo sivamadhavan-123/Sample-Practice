@@ -7,7 +7,7 @@ import jakarta.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet("/siva")
+@WebServlet("/login")
 public class App extends HttpServlet
 {
     @Override
@@ -27,7 +27,6 @@ public class App extends HttpServlet
 
             session.setAttribute("username", userName);
             session.setAttribute("name", name);
-
             out.println("login success");
 
         }else{
